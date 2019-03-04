@@ -6,13 +6,9 @@ process.stdout.write('prompt > ');
 
 process.stdin.on('data', data => {
   // command pieces
-  let cmdString = data.toString().split(' ');
-  let cmd = cmdString[0].trim();
-  let args = data
-    .toString()
-    .split(' ')
-    .slice(1);
-
+  let cmdString = data.toString().split(' ').map(e => e.trim());
+  let cmd = cmdString[0];
+  let args = cmdString.slice(1)
   // code to run commands
   if (cmd === 'pwd') {
     pwdFunc();

@@ -1,0 +1,22 @@
+{
+  "name": "node-shell",
+  "version": "1.0.0",
+  "description": "fullstack project",
+  "main": "bash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toddivey/node-shell.git"
+  },
+  "author": "todd jon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toddivey/node-shell/issues"
+  },
+  "homepage": "https://github.com/toddivey/node-shell#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
